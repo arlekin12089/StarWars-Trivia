@@ -1,0 +1,171 @@
+.header {
+ margin: 30px 20px;
+
+ .logo {
+	max-width: 250px;
+	margin: 0 auto;
+ }
+}
+.main {
+ margin-top: 80px;
+	.info {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		@include breakpoint(small-max) {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		}
+	}
+	.heading{
+	@include font-size(32);
+	color: $white;
+	margin-bottom: 30px;
+	}
+}
+.character_wrapper {
+text-align: center;
+@include breakpoint(small-max) {
+padding: 0 20px 20px;
+text-align: inherit;
+}
+ h3{
+  color:$yellow;
+  @include font-size(25);
+  margin-bottom: 20px;
+  text-align: center;
+ }
+
+ select {
+ 	@include font-size(20);
+ 	margin: 20px 0;
+    background-size: 0.9rem;
+    background-repeat: no-repeat;
+    -webkit-appearance: none !important;
+    background-position: calc(100% - 1rem) center;
+    background-color: $light_yellow;
+    border: 2px solid $yellow;
+    border-radius: 4px;
+    font-weight: 500;
+    color: $black;
+    outline: none;
+    padding: 0.844rem 1rem;
+    padding-right: 3rem;
+    line-height: 1;
+ }
+}
+
+.button_wrapper {
+ padding: 0 20px;
+ text-align: center;
+ margin-bottom: 20px;
+
+	@include breakpoint(small-max) {
+	 text-align: center;
+ margin-bottom: 50px;
+ padding: 0;
+	}
+ .selectBtn {
+ 	height: 50px;
+    padding: 10px 80px;
+    @include font-size(18);
+    line-height: 27px;
+    letter-spacing: 0.01rem;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $black;
+    user-select: none;
+    cursor: pointer;
+    border: none;
+    background: $yellow;
+	@include breakpoint(small-max) {
+	   padding: 10px 50px;
+	}
+
+	&:hover{
+	background: $grey;
+	color: $yellow;
+	}
+ }
+}
+
+.characters-wrap {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+flex-direction: column;
+	@include breakpoint(small-max) {
+	flex-direction: row;
+	}
+.item{
+padding: 20px;
+text-align: center;
+}
+.character_img {
+    max-width: 400px;
+    max-height: 400px;
+    /* margin: 0 auto; */
+    min-height: 400px;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+}
+}
+.message{
+@include font-size(20);
+	color: $white;
+    text-align: center;
+}
+
+.btn{
+	@include font-size(16);
+    line-height: 20px;
+    letter-spacing: 0.01rem;
+    display: inline-block;
+    padding: 10px 50px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $black;
+    user-select: none;
+    cursor: pointer;
+    height: 45px;
+    border: none;
+    margin: 0 5px;
+	background: $yellow;
+	&:hover{
+	background: $white;
+	color: $black;
+	}
+}
+.character_list {
+padding: 20px;
+color: $white;
+li {
+margin-bottom: 10px;
+
+span{
+color: $yellow;
+}
+}
+}
+.character-buttons{
+    display: flex;
+    flex-direction: column;
+	button{
+	margin-bottom: 10px;
+	}
+}
+
+.character_name{
+@include font-size(28);
+    margin: 20px 0 0;
+    font-weight: 600;
+    color: $yellow;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="styles/style.css" />
+	<title>Star Wars Trivia</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="logo">
+				<img src="images/logo.png" alt="Star Wars">
+			</div>
+		</div>
+	</header>
+	<main class="main">
+	<div class="container">
+		<h2 class="center heading">Choose your character:</h2>
+		<div class="info">
+			<section class="character_wrapper">
+				<h3>First character</h3>
+				<select name="character_one" id="character_one">
+					<option value="none" selected disabled hidden>Select your character</option>
+					<option value="Luke Skywalker">Luke Skywalker</option>
+					<option value="C-3PO">C-3PO</option>
+					<option value="R2-D2">R2-D2</option>
+					<option value="Darth Vader">Darth Vader</option>
+					<option value="Chewbacca">Chewbacca</option>
+					<option value="Han Solo">Han Solo</option>
+					<option value="Yoda">Yoda</option>
+					<option value="Leia Organa">Leia Organa</option>
+				</select>
+
+
+			</section>
+			<section class="character_wrapper">
+				<h3>Second character</h3>
+				<select name="character_second" id="character_second">
+					<option value="none" selected disabled hidden>Select your character</option>
+					<option value="Luke Skywalker">Luke Skywalker</option>
+					<option value="C-3PO">C-3PO</option>
+					<option value="R2-D2">R2-D2</option>
+					<option value="Darth Vader">Darth Vader</option>
+					<option value="Chewbacca">Chewbacca</option>
+					<option value="Han Solo">Han Solo</option>
+					<option value="Yoda">Yoda</option>
+					<option value="Leia Organa">Leia Organa</option>
+				</select>
+			</section>
+		</div>
+	<div class="button_wrapper">
+			<button class="selectBtn">Choose your character</button>
+		</div>
+		<div class="message"></div>
+		<section class="characters-wrap">
+			<div class="character-item-first item">
+				<div class="character_img">
+					<img src="images/anonymous.jpg" alt="">
+				</div>
+				<div class="character_info" style="display:none;">
+					<h2 class="character_name"></h2>
+					<ul class="character_list">
+						<li>Mass: <span class="massElem"></span></li>
+						<li>Height: <span class="heightElem"></span></li>
+						<li>Hair color: <span class="hair_colorElem"></span></li>
+						<li>Gender: <span class="genderElem"></span></li>
+					</ul>
+					<div class="character-buttons">
+						<button class="btn weightBtn">Weight</button>
+						<button class="btn heightBtn">Height</button>
+						<button class="btn hair_colorBtn">Hair color</button>
+						<button class="btn genderBtn">Gender</button>
+					</div>
+				</div>
+			</div>
+			<div class="character-item-second item">
+				<div class="character_img">
+					<img src="images/anonymous.jpg" alt="">
+				</div>
+				<div class="character_info" style="display:none;">
+					<h2 class="character_name"></h2>
+					<ul class="character_list">
+						<li>Mass: <span class="massElem"></span></li>
+						<li>Height: <span class="heightElem"></span></li>
+						<li>Hair color: <span class="hair_colorElem"></span></li>
+						<li>Gender: <span class="genderElem"></span></li>
+					</ul>
+					<div class="character-buttons">
+						<button class="btn weightBtn">Weight</button>
+						<button class="btn heightBtn">Height</button>
+						<button class="btn hair_colorBtn">Hair color</button>
+						<button class="btn genderBtn">Gender</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	</main>
+	<script type="module" src="scripts/index.js"></script>
+</body>
+
+</html>
