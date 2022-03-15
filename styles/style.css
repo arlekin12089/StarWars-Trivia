@@ -421,8 +421,8 @@ img {
 .character_name {
   font-size: 28px;
   font-size: 1.75rem;
-  margin: 20px 0 0;
+  margin: 20px;
   font-weight: 600;
-  color: #e7c103;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

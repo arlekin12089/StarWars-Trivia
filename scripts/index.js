@@ -17,14 +17,14 @@ function showCharacter(character, anotherChar, container) {
     character_img.src = "images/anonymous.jpg";
   } else {
     character_info.style.display = "block";
-    let massElem = container.querySelector(".massElem");
-    massElem.innerHTML = `${character.mass}`;
-    let heightElem = container.querySelector(".heightElem");
-    heightElem.innerHTML = `${character.height}`;
-    let hair_colorElem = container.querySelector(".hair_colorElem");
-    hair_colorElem.innerHTML = `${character.hair_color}`;
-    let genderElem = container.querySelector(".genderElem");
-    genderElem.innerHTML = `${character.gender}`;
+    // let massElem = container.querySelector(".massElem");
+    // massElem.innerHTML = `${character.mass}`;
+    // let heightElem = container.querySelector(".heightElem");
+    // heightElem.innerHTML = `${character.height}`;
+    // let hair_colorElem = container.querySelector(".hair_colorElem");
+    // hair_colorElem.innerHTML = `${character.hair_color}`;
+    // let genderElem = container.querySelector(".genderElem");
+    // genderElem.innerHTML = `${character.gender}`;
     let characterNameElem = container.querySelector(".character_name");
     characterNameElem.innerHTML = `${character.name}`;
     character_img.src = `${character.pictureUrl}`;
@@ -32,47 +32,47 @@ function showCharacter(character, anotherChar, container) {
       let diff_weight = character.compareWeight(anotherChar);
       if (diff_weight > 0) {
         character > anotherChar;
-        message.innerHTML = `${character.name} (${character.mass} kg) weights more than ${anotherChar.name} (${
+        message.innerHTML = `My name is ${character.name} (${character.mass} kg) and I weight more than ${anotherChar.name} (${
           anotherChar.mass
         } kg).The difference is ${Math.abs(diff_weight)} kg.`;
       } else if (diff_weight < 0) {
-        message.innerHTML = `${character.name} (${character.mass} kg) weights less than ${anotherChar.name} (${
+        message.innerHTML = `My name is ${character.name} (${character.mass} kg) and I weight less than ${anotherChar.name} (${
           anotherChar.mass
         } kg). 
 		The difference is ${Math.abs(diff_weight)} kg.`;
       } else {
-        message.innerHTML = `${anotherChar.name} (${anotherChar.mass} kg) and ${character.name} (${character.mass} kg) weight the same!`;
+        message.innerHTML = `We are ${anotherChar.name} (${anotherChar.mass} kg) and ${character.name} (${character.mass} kg) and we weight the same!`;
       }
     });
     container.querySelector(".heightBtn").addEventListener("click", () => {
       let diff_height = character.compareHeight(anotherChar);
       if (diff_height > 0) {
         character > anotherChar;
-        message.innerHTML = `${character.name} height (${character.height} cm) is more than ${anotherChar.name} (${
+        message.innerHTML = `My name is ${character.name} and my height (${character.height} cm) is more than ${anotherChar.name} (${
           anotherChar.height
         } cm). 
 		 The difference is ${Math.abs(diff_height)} cm.`;
       } else if (diff_height < 0) {
-        message.innerHTML = `${character.name} (${character.height} cm)  height is less than ${anotherChar.name} (${
+        message.innerHTML = `My name is ${character.name} (${character.height} cm)  and my height is less than ${anotherChar.name} (${
           anotherChar.height
         } cm). 
 		 The difference is ${Math.abs(diff_height)} cm.`;
       } else {
-        message.innerHTML = `${anotherChar.name}(${anotherChar.height} cm) and ${character.name} (${character.height} cm) height the same!.`;
+        message.innerHTML = `We are ${anotherChar.name}(${anotherChar.height} cm) and ${character.name} (${character.height} cm) and our height is the same!.`;
       }
     });
     container.querySelector(".hair_colorBtn").addEventListener("click", () => {
       let hair_selection = character.compareHairColor(anotherChar);
       if (hair_selection) {
-        message.innerHTML = `${character.name} and ${anotherChar.name} have the same color ${character.hair_color}.`;
+        message.innerHTML = `Me ${character.name} and ${anotherChar.name} have the same color ${character.hair_color}.`;
       } else {
-        message.innerHTML = `We have different hair color! ${character.name} has ${character.hair_color} color and ${anotherChar.name} has ${anotherChar.hair_color} color.`;
+        message.innerHTML = `We have different hair color! Mine (${character.name}) is ${character.hair_color} color and ${anotherChar.name} has ${anotherChar.hair_color} color.`;
       }
     });
     container.querySelector(".genderBtn").addEventListener("click", () => {
       let gender_selection = character.compareGender(anotherChar);
       if (gender_selection) {
-        message.innerHTML = `${character.name} and ${anotherChar.name} have the same gender - ${character.gender}.`;
+        message.innerHTML = `We ${character.name} and ${anotherChar.name} have the same gender - ${character.gender}.`;
       } else {
         message.innerHTML = `We have different gender! ${character.name} has ${character.gender}
   gender and ${anotherChar.name} has ${anotherChar.gender} gender.`;
